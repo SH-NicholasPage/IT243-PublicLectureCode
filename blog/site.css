@@ -1,7 +1,7 @@
-body
+html, body
 {
     margin: 0 auto;
-    font-size: 16px;
+    font-size: 20px;
     min-height: 100vh;
 }
 
@@ -35,6 +35,7 @@ a
 {
     color: inherit;
     text-decoration: none;
+    margin-left: 30px;
 }
 
 main
@@ -42,7 +43,7 @@ main
     min-height: 100vh;
 }
 
-.blog_wrapper
+.blog-wrapper
 {
     max-width: 90vw;
     display: flex;
@@ -57,7 +58,7 @@ button
     margin-top: 20px;
     background: whitesmoke;
     border: none;
-    font-size: 25px;
+    font-size: 1.25rem;
 }
 
 article
@@ -70,7 +71,7 @@ article
 
 article h3
 {
-    font-size: 20px;
+    font-size: 1.25rem;
     text-align: center;
 }
 
@@ -80,7 +81,7 @@ article p
     padding: 20px 0;
 }
 
-.read_more
+.read-more
 {
     text-align: center;
     background: orange;
@@ -95,7 +96,7 @@ main, aside
 
 @media (min-width: 900px)
 {
-    .blog_wrapper
+    .blog-wrapper
     {
         max-width: 70vw;
     }
