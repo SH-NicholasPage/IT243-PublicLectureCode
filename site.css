@@ -1,0 +1,10 @@
+html, body, input
+{
+    font-size: 24px;
+}
+
+hr
+{
+    width: 25%;
+    margin: 0;
+}

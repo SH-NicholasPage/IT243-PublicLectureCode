@@ -1,0 +1,3 @@
+- `calculator.mjs` is the JavaScript for `calculator.html`.
+- `calculatorvue.html` is the Vue.js version of the calculator.
+- `site.css` is a stylesheet used by both `calculator.html` and `calculatorvue.html`.

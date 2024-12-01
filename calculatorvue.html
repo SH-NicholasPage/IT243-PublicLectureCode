@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Vue.js Calculator</title>
+    <link rel="stylesheet" href="site.css">
+</head>
+<body>
+    <div id="app" style="display: none;">
+        <p><label>x <input type="number" v-model="x" /></label></p>
+        <p><label>y <input type="number" v-model="y" /></label></p>
+        <hr />
+        <p>= <span>{{ result }}</span></p>
+    </div>
+
+    <script src="https://unpkg.com/vue@3/dist/vue.global.js"></script>
+    <script>
+        // Utility function to check if a value is not numeric
+        function isNotNumericValue(value) {
+            return isNaN(value) || !isFinite(value);
+        }
+
+        // Vue application definition
+        const calcApp = {
+            data() {
+                return {
+                    x: 0,
+                    y: 0,
+                    lastResult: 0
+                };
+            },
+            computed: {
+                result() {
+                    const x = parseFloat(this.x);
+                    if (isNotNumericValue(x)) return this.lastResult;
+
+                    const y = parseFloat(this.y);
+                    if (isNotNumericValue(y)) return this.lastResult;
+
+                    this.lastResult = x + y;
+                    return this.lastResult;
+                }
+            }
+        };
+
+        // Mount the Vue application to the DOM
+        Vue.createApp(calcApp).mount('#app');
+        // Show the app after mounting
+        document.getElementById('app').style.display = 'block';
+    </script>
+</body>
+</html>
