@@ -94,6 +94,12 @@ main, aside
     flex: 1;
 }
 
+.dark
+{
+    background: #38383A;
+    color: whitesmoke;
+}
+
 @media (min-width: 900px)
 {
     .blog-wrapper
