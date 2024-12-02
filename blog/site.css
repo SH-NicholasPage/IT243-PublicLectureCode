@@ -38,6 +38,11 @@ a
     margin-left: 30px;
 }
 
+hr
+{
+    width: 75%;
+}
+
 main
 {
     min-height: 100vh;
