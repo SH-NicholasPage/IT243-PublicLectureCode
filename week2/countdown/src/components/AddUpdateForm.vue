@@ -26,13 +26,13 @@ export default {
 
 form
 {
+  display: flex;
+  flex-direction: column;
   background: white;
   min-width: 60vw;
   min-height: 40vh;
   padding: 2rem;
   border-radius: 0.3rem;
-  display: flex;
-  flex-direction: column;
 }
 
 form > div
@@ -47,9 +47,8 @@ form input, select
 {
   margin: 0.6rem 0;
   padding: 0.6rem 1rem;
-  border: 1px lightgrey solid;
+  border: 1px lightgray solid;
   border-radius: 0.3rem;
-  font-size: 16px;
 }
 
 form button
@@ -60,6 +59,11 @@ form button
   padding: 0.6rem;
   border-radius: 0.3rem;
   font-size: 16px;
+}
+
+label
+{
+  color: rgb(49, 49, 49);
 }
 
 .close
